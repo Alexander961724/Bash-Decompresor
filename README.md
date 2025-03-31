@@ -1,4 +1,16 @@
+# 🗂️ Bash-Decompresor  
 
+## 🔹 Description  
+A simple **Bash script** that recursively extracts nested compressed files using **7z** until no more archives remain.  
+
+## 🛠️ How It Works  
+1️⃣ Extracts `first_file_name` using **7z**.  
+2️⃣ Checks if the extracted file is another compressed archive.  
+3️⃣ If yes, extracts it too.  
+4️⃣ Repeats until no more compressed files remain.  
+
+## 📜 Script Code  
+```bash
 #!/bin/bash
 endColour="\033[0m\e[0m"
 redColour="\e[0;31m\033[1m"
